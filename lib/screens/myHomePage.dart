@@ -14,27 +14,29 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Center(
-            child: Row(
-              children: [
-                SizedBox(
-                  width: 25.0,
-                ),
-                SizedBox(
-                    width: 50,
-                    height: 50,
-                    child: Image.asset("assets/images/fablabLogomini.jpeg")),
-                SizedBox(
-                  width: 10.0,
-                ),
-                Text("FabLab IUB"),
-              ],
+        appBar: appBarFabLab(), drawer: MyDrawer(), body: GridViewContainer());
+  }
+
+  static AppBar appBarFabLab() {
+    return AppBar(
+      title: Center(
+        child: Row(
+          children: [
+            SizedBox(
+              width: 25.0,
             ),
-          ),
+            SizedBox(
+                width: 50,
+                height: 50,
+                child: Image.asset("assets/images/fablabLogomini.jpeg")),
+            SizedBox(
+              width: 10.0,
+            ),
+            Text("FabLab IUB"),
+          ],
         ),
-        drawer: MyDrawer(),
-        body: GridViewContainer());
+      ),
+    );
   }
 
   GridViewContainer() {

@@ -3,6 +3,12 @@
 import 'package:app/screens/myHomePage.dart';
 import 'package:flutter/material.dart';
 
+import 'screens/AboutUs/aboutFabLabIUBPage.dart';
+import 'screens/AboutUs/contactUsPage.dart';
+import 'screens/AboutUs/fabCharterPage.dart';
+import 'screens/AboutUs/fabFoundationPage.dart';
+import 'screens/AboutUs/faqPage.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -22,10 +28,22 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.white,
           foregroundColor: Colors.black,
-          titleTextStyle: TextStyle(color: Colors.black, fontSize: 30.0,fontWeight: FontWeight.w500),
+          titleTextStyle: TextStyle(
+              color: Colors.black, fontSize: 30.0, fontWeight: FontWeight.w500),
         ),
       ),
-      home: MyHomePage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => MyHomePage(),
+        'AboutFabLabIUBPage': (context) => AboutFabLabIUBPage(),
+        'ContactUsPage': (context) => ContactUsPage(),
+        'FabCharterPage': (context) => FabCharterPage(),
+        'FabFoundationPage': (context) => FabFoundationPage(),
+        'FaqPage': (context) => FaqPage(),
+
+
+        
+      },
     );
   }
 }
