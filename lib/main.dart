@@ -8,6 +8,10 @@ import 'screens/AboutUs/contactUsPage.dart';
 import 'screens/AboutUs/fabCharterPage.dart';
 import 'screens/AboutUs/fabFoundationPage.dart';
 import 'screens/AboutUs/faqPage.dart';
+import 'screens/People/fabLabTeamDuringHqpPPage.dart';
+import 'screens/People/fabLabTeamPage.dart';
+import 'screens/People/fabbersPage.dart';
+import 'screens/People/researchersPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         drawerTheme: DrawerThemeData(
           backgroundColor: Colors.white,
@@ -35,14 +39,17 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => MyHomePage(),
+        //About Uu
         'AboutFabLabIUBPage': (context) => AboutFabLabIUBPage(),
         'ContactUsPage': (context) => ContactUsPage(),
         'FabCharterPage': (context) => FabCharterPage(),
         'FabFoundationPage': (context) => FabFoundationPage(),
         'FaqPage': (context) => FaqPage(),
-
-
-        
+        //People
+        'FabLabTeamPage': (context) => FabLabTeamPage(),
+        'ResearchersPage': (context) => ResearchersPage(),
+        'FabbersPage': (context) => FabbersPage(),
+        'FabLabTeamDurinHqpPPage': (context) => FabLabTeamDuringHqpPPage(),
       },
     );
   }
