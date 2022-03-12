@@ -3,8 +3,8 @@
 import 'package:app/screens/myHomePage.dart';
 import 'package:flutter/material.dart';
 
-class AboutFabLabIUBPage extends StatelessWidget {
-  const AboutFabLabIUBPage({Key? key}) : super(key: key);
+class Arts_designPage extends StatelessWidget {
+  const Arts_designPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

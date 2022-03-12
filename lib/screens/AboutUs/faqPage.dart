@@ -39,7 +39,7 @@ class FaqPage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 10.0),
+                    padding: const EdgeInsets.only(left: 15, top: 10, right: 15, bottom: 8),
                     child: Text(
                       "Here Are Some Common Questions About FabLab IUB",
                       style: TextStyle(fontSize: 15),

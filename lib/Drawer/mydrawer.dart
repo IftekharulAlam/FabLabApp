@@ -61,13 +61,13 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             title: Text('Blog'),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.pushNamed(context, 'BlogPage');
             },
           ),
           ListTile(
             title: Text('Membership'),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.pushNamed(context, 'MembershipPage');
             },
           ),
         ],

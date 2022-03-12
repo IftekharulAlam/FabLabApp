@@ -18,7 +18,7 @@ class FabLabTeamPage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   "Director",
-                  style: TextStyle(fontSize: 25),
+                  style: TextStyle(fontSize: 20, decoration: TextDecoration.underline),
                 ),
               ),
               Image.asset("assets/images/Dr-mahady-Hasan.png"),
@@ -30,7 +30,7 @@ class FabLabTeamPage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   "Advisory Panel",
-                  style: TextStyle(fontSize: 25),
+                  style: TextStyle(fontSize: 20, decoration: TextDecoration.underline),
                 ),
               ),
               Image.asset("assets/images/Prof.-Farruk-Ahmed.png"),
@@ -55,7 +55,7 @@ class FabLabTeamPage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   "Research & Development Officer",
-                  style: TextStyle(fontSize: 25),
+                  style: TextStyle(fontSize: 20,decoration: TextDecoration.underline),
                 ),
               ),
               Image.asset("assets/images/7.png"),
@@ -68,7 +68,7 @@ class FabLabTeamPage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   "Support Team",
-                  style: TextStyle(fontSize: 25),
+                  style: TextStyle(fontSize: 20,decoration: TextDecoration.underline),
                 ),
               ),
               Image.asset("assets/images/5.png"),

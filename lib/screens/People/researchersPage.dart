@@ -32,7 +32,7 @@ class ResearchersPage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   "Our Researchers",
-                  style: TextStyle(fontSize: 25),
+                  style: TextStyle(fontSize: 25,decoration: TextDecoration.underline,),
                 ),
               ),
               for (int i = 0; i < names.length; i++)

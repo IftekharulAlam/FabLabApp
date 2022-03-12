@@ -52,7 +52,7 @@ class FabLabTeamDuringHqpPPage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   "Managment Team",
-                  style: TextStyle(fontSize: 25),
+                  style: TextStyle(fontSize: 25,decoration: TextDecoration.underline,),
                 ),
               ),
               for (int i = 0; i < 4; i++)
@@ -61,7 +61,7 @@ class FabLabTeamDuringHqpPPage extends StatelessWidget {
                 padding: const EdgeInsets.all(15.0),
                 child: Text(
                   "Operations & Support Team",
-                  style: TextStyle(fontSize: 25),
+                  style: TextStyle(fontSize: 25,decoration: TextDecoration.underline,),
                 ),
               ),
               for (int i = 4; i < names.length; i++)

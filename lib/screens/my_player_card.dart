@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
@@ -19,7 +19,7 @@ class MyPlayerCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      alignment: AlignmentDirectional.centerEnd,
+      // alignment: AlignmentDirectional.centerEnd,
       children: [
         Padding(
           padding: const EdgeInsets.only(
@@ -28,6 +28,7 @@ class MyPlayerCard extends StatelessWidget {
             right: 12.0,
             bottom: 12.0,
           ),
+          //  child: Image.asset("assets/workshops/img1.jpeg"),
           child: Container(
             decoration: BoxDecoration(
               color: Colors.white,
@@ -37,10 +38,10 @@ class MyPlayerCard extends StatelessWidget {
                   color: const Color(0xff661EFF).withOpacity(0.2),
                 )
               ],
-              borderRadius: BorderRadius.circular(12.0),
+              borderRadius: BorderRadius.circular(10.0),
               image: const DecorationImage(
                 alignment: Alignment.topCenter,
-                image: AssetImage("assets/images/card_bg.png"),
+                image: AssetImage("assets/workshops/img1.jpeg"),
               ),
             ),
             child: Row(
@@ -58,7 +59,7 @@ class MyPlayerCard extends StatelessWidget {
                           name,
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 24.0,
+                            fontSize: 18.0,
                             fontWeight: FontWeight.w300,
                           ),
                         ),
@@ -73,34 +74,35 @@ class MyPlayerCard extends StatelessWidget {
               ],
             ),
           ),
-        ),
-        chobi,
-        Padding(
-          padding: const EdgeInsets.only(top: 100.0, left: 30.0, right: 10.0),
-          child: Container(
-            width: double.infinity,
-            // color: Colors.redAccent.withOpacity(0.5),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "Age: $age",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w500,
-                    fontSize: 18.0,
-                  ),
-                ),
-                Text(
-                  "Role: $role",
-                  style: TextStyle(
-                    // fontWeight: FontWeight.w500,
-                    fontSize: 16.0,
-                  ),
-                ),
-              ],
-            ),
-          ),
         )
+
+        // chobi,
+        // Padding(
+        //   padding: const EdgeInsets.only(top: 100.0, left: 30.0, right: 10.0),
+        //   child: SizedBox(
+        //     width: double.infinity,
+        //     // color: Colors.redAccent.withOpacity(0.5),
+        //     child: Column(
+        //       crossAxisAlignment: CrossAxisAlignment.start,
+        //       children: [
+        //         Text(
+        //           "Age: $age",
+        //           style: TextStyle(
+        //             fontWeight: FontWeight.w500,
+        //             fontSize: 18.0,
+        //           ),
+        //         ),
+        //         Text(
+        //           "Role: $role",
+        //           style: TextStyle(
+        //             // fontWeight: FontWeight.w500,
+        //             fontSize: 16.0,
+        //           ),
+        //         ),
+        //       ],
+        //     ),
+        //   ),
+        // )
       ],
     );
   }

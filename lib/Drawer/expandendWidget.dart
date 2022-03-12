@@ -51,43 +51,43 @@ class myexpandedWidget extends StatelessWidget {
 
                 //Facilities
                 case "Workshop & Training":
-                  Navigator.pushNamed(context, 'FaqPage');
+                  Navigator.pushNamed(context, 'Workshop_trainingPage');
                   break;
                 case "Prototyping":
-                  Navigator.pushNamed(context, 'FaqPage');
+                  Navigator.pushNamed(context, 'PrototypePage');
                   break;
                 case "Arts & Design":
-                  Navigator.pushNamed(context, 'FaqPage');
+                  Navigator.pushNamed(context, 'Arts_designPage');
                   break;
                 //Tools & Machineries
                 case "Heavy Machineries":
-                  Navigator.pushNamed(context, 'FaqPage');
+                  Navigator.pushNamed(context, 'HeavyMachineriesPage');
                   break;
                 case "Electronics":
-                  Navigator.pushNamed(context, 'FaqPage');
+                  Navigator.pushNamed(context, 'ElectronicsPage');
                   break;
                 case "Power Tools":
-                  Navigator.pushNamed(context, 'FaqPage');
+                  Navigator.pushNamed(context, 'PowerToolsPage');
                   break;
                 //Research
                 case "Projects":
-                  Navigator.pushNamed(context, 'FaqPage');
+                  Navigator.pushNamed(context, 'ProjectsPage');
                   break;
                 case "Products":
-                  Navigator.pushNamed(context, 'FaqPage');
+                  Navigator.pushNamed(context, 'ProductsPage');
                   break;
                 case "Publications":
-                  Navigator.pushNamed(context, 'FaqPage');
+                  Navigator.pushNamed(context, 'PublicationPage');
                   break;
                 case "Collaborators":
-                  Navigator.pushNamed(context, 'FaqPage');
+                  Navigator.pushNamed(context, 'CollaboratorPage');
                   break;
                 case "Idea Box":
-                  Navigator.pushNamed(context, 'FaqPage');
+                  Navigator.pushNamed(context, 'IdeaBoxPage');
                   break;
                 //Events
                 case "Techfest: Slot Registration":
-                  Navigator.pushNamed(context, 'FaqPage');
+                  Navigator.pushNamed(context, 'TechfestSlotPage');
                   break;
 
                 default:
