@@ -1,27 +1,23 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables
 
-import 'package:flutter/material.dart';
 import 'package:app/screens/myHomePage.dart';
-class DetailsPage extends StatelessWidget {
-  final String name;
-  final Image chobi;
-  final String age;
-  final String role;
+import 'package:flutter/material.dart';
 
-  const DetailsPage({
+class DetailsPage extends StatelessWidget {
+  final String title;
+  final String pic;
+
+  DetailsPage({
     Key? key,
-    required this.name,
-    required this.chobi,
-    required this.age,
-    required this.role,
+    required this.title,
+    required this.pic,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       appBar: MyHomePage.appBarFabLab(),
-      body: Stack(
+     body: Stack(
         alignment: AlignmentDirectional.centerEnd,
         children: [
           Padding(
@@ -40,10 +36,10 @@ class DetailsPage extends StatelessWidget {
                     color: const Color(0xff661EFF).withOpacity(0.2),
                   )
                 ],
-                borderRadius: BorderRadius.circular(12.0),
-                image: const DecorationImage(
+                borderRadius: BorderRadius.circular(10.0),
+                image: DecorationImage(
                   alignment: Alignment.topCenter,
-                  image: AssetImage("assets/images/card_bg.png"),
+                  image: AssetImage(pic),
                 ),
               ),
               child: Row(
@@ -58,10 +54,10 @@ class DetailsPage extends StatelessWidget {
                       child: Column(
                         children: [
                           Text(
-                            name,
+                            "",
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 24.0,
+                              fontSize: 18.0,
                               fontWeight: FontWeight.w300,
                             ),
                           ),
@@ -77,27 +73,19 @@ class DetailsPage extends StatelessWidget {
               ),
             ),
           ),
-          chobi,
           Padding(
-            padding: const EdgeInsets.only(top: 100.0, left: 30.0, right: 10.0),
-            child: Container(
+            padding: const EdgeInsets.only(top: 260.0, left: 30.0, right: 10.0),
+            child: SizedBox(
               width: double.infinity,
               // color: Colors.redAccent.withOpacity(0.5),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Age: $age",
+                    "$title",
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 18.0,
-                    ),
-                  ),
-                  Text(
-                    "Role: $role",
-                    style: TextStyle(
-                      // fontWeight: FontWeight.w500,
-                      fontSize: 16.0,
                     ),
                   ),
                 ],

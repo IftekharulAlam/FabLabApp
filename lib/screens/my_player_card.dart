@@ -1,25 +1,24 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables
+
 
 import 'package:flutter/material.dart';
 
 class MyPlayerCard extends StatelessWidget {
-  final String name;
-  final Image chobi;
-  final String age;
-  final String role;
+  final String title;
+//final Image pic;
 
-  const MyPlayerCard({
+  Image pic = Image.asset("assets/images/carosel1.png");
+
+  MyPlayerCard({
     Key? key,
-    required this.name,
-    required this.chobi,
-    required this.age,
-    required this.role,
+    required this.title,
+ //  required this.pic,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Stack(
-      // alignment: AlignmentDirectional.centerEnd,
+      alignment: AlignmentDirectional.centerEnd,
       children: [
         Padding(
           padding: const EdgeInsets.only(
@@ -28,7 +27,6 @@ class MyPlayerCard extends StatelessWidget {
             right: 12.0,
             bottom: 12.0,
           ),
-          //  child: Image.asset("assets/workshops/img1.jpeg"),
           child: Container(
             decoration: BoxDecoration(
               color: Colors.white,
@@ -39,9 +37,9 @@ class MyPlayerCard extends StatelessWidget {
                 )
               ],
               borderRadius: BorderRadius.circular(10.0),
-              image: const DecorationImage(
+              image: DecorationImage(
                 alignment: Alignment.topCenter,
-                image: AssetImage("assets/workshops/img1.jpeg"),
+                image: pic.image,
               ),
             ),
             child: Row(
@@ -56,7 +54,7 @@ class MyPlayerCard extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          name,
+                          "",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 18.0,
@@ -74,35 +72,26 @@ class MyPlayerCard extends StatelessWidget {
               ],
             ),
           ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(top: 260.0, left: 30.0, right: 10.0),
+          child: SizedBox(
+            width: double.infinity,
+            // color: Colors.redAccent.withOpacity(0.5),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 18.0,
+                  ),
+                ),
+              ],
+            ),
+          ),
         )
-
-        // chobi,
-        // Padding(
-        //   padding: const EdgeInsets.only(top: 100.0, left: 30.0, right: 10.0),
-        //   child: SizedBox(
-        //     width: double.infinity,
-        //     // color: Colors.redAccent.withOpacity(0.5),
-        //     child: Column(
-        //       crossAxisAlignment: CrossAxisAlignment.start,
-        //       children: [
-        //         Text(
-        //           "Age: $age",
-        //           style: TextStyle(
-        //             fontWeight: FontWeight.w500,
-        //             fontSize: 18.0,
-        //           ),
-        //         ),
-        //         Text(
-        //           "Role: $role",
-        //           style: TextStyle(
-        //             // fontWeight: FontWeight.w500,
-        //             fontSize: 16.0,
-        //           ),
-        //         ),
-        //       ],
-        //     ),
-        //   ),
-        // )
       ],
     );
   }

@@ -77,7 +77,6 @@ class MyApp extends StatelessWidget {
         'PowerToolsPage': (context) => PowerToolsPage(),
         //membership
         'MembershipPage': (context) => MembershipPage(),
-
         //facilities
         'Arts_designPage': (context) => Arts_designPage(),
         'PrototypePage': (context) => PrototypePage(),
